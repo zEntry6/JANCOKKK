@@ -1,20 +1,30 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" href="iconpoop.svg" type="image/x-icon" />
-  <title>GAME ASU</title>
-  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stick Hero Game</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container">
-  <div id="score"></div>
-  <canvas id="game" width="375" height="375"></canvas>
-  <div id="introduction">Tekan mousenya blok biar tongkatnya panjang</div>
-  <div id="perfect">BUSET KEREN AMAT LUWH</div>
-  <button id="restart">YAHAHAHA WAHYU <br> RESTART SINI JANCOK!</button>
-</div>
-  <script  src="./script.js"></script>
+  <div id="introduction" class="overlay">
+    <h1>Stick Hero</h1>
+    <p>klik atw hold ya kocak, biar lu bisa maenin ini game</p>
+    <p><strong>INGAT KLIK ATW HOLD!!!!!</strong></p>
+  </div>
 
+  <div id="perfect" class="overlay hidden">
+    <p>Perfect!</p>
+  </div>
+
+  <div id="score-container">
+    <span>Skor: </span><span id="score">0</span>
+  </div>
+
+  <canvas id="game"></canvas>
+
+  <button id="restart" class="overlay hidden">YAH KOCAK KALAHN AWOKWOKWOKWO LEMAHH</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
